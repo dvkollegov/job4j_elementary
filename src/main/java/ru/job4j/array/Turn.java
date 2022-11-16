@@ -5,7 +5,6 @@ public class Turn {
         int temp = array[0];
         array[0] = array[array.length - 1];
         array[array.length - 1] = temp;
-
         for (int i = 1; i < array.length / 2; i++) {
             temp = array[i];
             array[i] = array[array.length - i - 1];
