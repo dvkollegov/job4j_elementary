@@ -30,4 +30,25 @@ class MaxTest {
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void thirdMax() {
+        int a = 2;
+        int b = 3;
+        int c = 5;
+        int result = Max.max(a, b, c);
+        int expected = 5;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void fourthMax() {
+        int a = 2;
+        int b = 3;
+        int c = 4;
+        int d = 5;
+        int result = Max.max(a, b, c, d);
+        int expected = 5;
+        assertThat(result).isEqualTo(expected);
+    }
 }
